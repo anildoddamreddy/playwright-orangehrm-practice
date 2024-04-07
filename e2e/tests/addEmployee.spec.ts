@@ -12,7 +12,7 @@ test("Check Creation of Employee", async ({ page }) => {
   await page.getByPlaceholder("Middle Name").fill("pight");
   await page.getByPlaceholder("Last Name").fill("Catalin");
   await page.locator("form").getByRole("textbox").nth(4).click();
-  await page.locator("form").getByRole("textbox").nth(4).fill("12360");
+  await page.locator("form").getByRole("textbox").nth(4).fill("18756");
   await page.getByRole("button", { name: "Save" }).click();
   await expect(page.getByText("Successfully Saved")).toBeVisible();
 });
