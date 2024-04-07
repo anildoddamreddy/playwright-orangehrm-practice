@@ -1,7 +1,8 @@
 import { test, expect } from "@playwright/test";
 
 test("Check Creation of Employee", async ({ page }) => {
-  await page.goto(`${process.env.URL}`);
+  var a;
+          await page.goto(`${process.env.URL}`);
   await page.getByPlaceholder("Username").click();
   await page.getByPlaceholder("Username").fill("Admin");
   await page.getByPlaceholder("Password").fill("admin123");
