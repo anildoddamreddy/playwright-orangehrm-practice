@@ -10,7 +10,8 @@
     "lint:fix": "npx eslint . --fix",
     "format": "npx prettier . --check",
     "format:fix": "npx prettier . --write",
-    "prepare": "husky"
+    "prepare": "husky",
+    "report": "npx playwright show-report"
   },
   "keywords": [],
   "author": "",
